@@ -1,2 +1,2 @@
-# Projeto-site
-Projeto de um site para a aula de Git/GitHub
+# projeto-site
+ Projeto de um site criado durante o curso de Git e GitHub
