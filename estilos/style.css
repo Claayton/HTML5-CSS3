@@ -7,6 +7,9 @@ body {
     background-color:rgb(54, 54, 204);
 
 }
+img.lado {
+    float: right
+}
 
 main {
     background-color: white;
