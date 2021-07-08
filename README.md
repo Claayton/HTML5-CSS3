@@ -8,4 +8,4 @@ Uma coleção de desafios propostas pelo professor Gustavo Guanarara a medida em
 Uma coleção de exercícios realizados juntamente com o professor Gustavo Guanabara para auxiliar no entendimento da matéria aplicada, os exercícios seguem cada módulo do curso disponível no [Canal do YouTube](https://youtube.com/cursoemvideo).
 
 ## Projeto de site
-Um pequeno projeto de site realizado juntamente com o professor Gustavo Guanabara em um curso de [Git-GitHub](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&ab_channel=CursoemV%C3%ADdeo), onde desenvolvemos o site para aprender a hospeda-lo dentro do GitHub gratuitamente.
+Um pequeno projeto de site realizado juntamente com o professor Gustavo Guanabara em um curso de [Git/GitHub](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&ab_channel=CursoemV%C3%ADdeo), onde desenvolvemos o site para aprender a hospeda-lo dentro do GitHub gratuitamente.
