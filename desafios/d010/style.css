@@ -6,6 +6,10 @@ body {
     background-color: #84E1AD;
 }
 
+main {
+    align-items: center;
+}
+
 header {
     border: 10px;
     padding: 2px;
@@ -53,7 +57,7 @@ a {
     border-radius: 5px 5px 0px 0px;
 }
 
-a:hover {
+nav>a:hover {
     color: #144C2D;
     background-color: #31b36b;
 }
