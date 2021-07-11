@@ -35,15 +35,10 @@ body {
 header {
     background-color: var(--cor4); /* Guanabara*/
 
-    border: 10px;
-    padding: 2px;
-    margin: -22px;
-    outline: 10px;
+    margin: 0;
     width: auto;
-    height: 100%;
-    color: white;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
 }
 
 header > h1 {
@@ -60,34 +55,35 @@ header > h1 {
 header > p {
     color: white; /* Guanabara*/
 
+    max-width: 500px;
+    margin: auto;
     text-shadow:0.1em 0.1em rgba(51, 51, 51, 0.322);
     border: 10px;
-    padding: 2px;
-    margin: -22px;
+    padding: 0px 20px 10px 20px;
     outline: 10px;
+
 }
 
 nav {
     background-color: var(--cor5); /* Guanabara*/
 
+    padding: 10px;
     text-align: left;
-    padding: 40px 40px 33px 47px;
-    margin: -22px;
     outline: 10px;
 }
 
 nav > a{
-    padding: 14px 14px;
+    padding: 11px;
     color: var(--cor0);
     font-style: normal;
     font-weight: bolder;
     text-decoration: none;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
 }
 
 nav>a:hover {
-    color: #144C2D;
-    background-color: #31b36b;
+    color: var(--cor5);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 }
 
 main {
@@ -96,20 +92,29 @@ main {
     margin-bottom: 30PX;
     min-width: 300px; /* Determina a largura mínima da DIV*/
     max-width: 1000px; /* Determina a largura máxima da DIV*/
-    padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534); /* Adiciona sombras na DIV*/
     border-bottom-left-radius: 10px; /* Arredonda a borda inferior esquerda da DIV*/
     border-bottom-right-radius: 10px; /* Arredonda a borda inferior direita da DIV*/
 }
 
 main > article > h1 {
-    color: var(--cor4);
+    color: var(--cor5);
     font-family: var(--fonte-android);
-    align-items: center; /* Duvidoso*/
+    padding: 20px;
 }
 
 main > article > h2 {
+    background-image: linear-gradient(to right, var(--cor1), white);
+    color: var(--cor4);
     font-family:var(--fonte-android);
+    border: 20px;
+    margin-left: 20px;
+    display: block;
+
+}
+
+main > article > p {
+    padding: 0px 20px 20px 20px;
 }
 
 main > article > picture > img {
