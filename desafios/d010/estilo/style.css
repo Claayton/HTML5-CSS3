@@ -71,7 +71,7 @@ nav > a{
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; /*Tempinho de transição quando passa o mouse no link (animação)*/
 }
 
 nav a:hover{
@@ -91,22 +91,53 @@ main {
     border-bottom-right-radius: 10px; /* Arredonda a borda inferior direita da DIV*/
 }
 
-main > article > h1 {
-    color: var(--cor4);
+main h1 {
+    color: var(--cor5);
     font-family: var(--fonte-android);
     align-items: center; /* Duvidoso*/
 }
 
-main > article > h2 {
+main h2 {
+    color: var(--cor4);
     font-family:var(--fonte-android);
+    font-style: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
 
-main > article > picture > img {
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Recuo no começo dos parágrafos paragrafo*/
+    line-height: 2em; /*Espaço entre as linhas*/
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
     width: 100%; /* Centraliza a Imagem com 100% do seu tamanho*/
 }
 
-main > article > img.pequena {
-    width: 50%; /* Determina que a imagem deve aparecer com apenas 50% do seu tamanho*/
+main img.pequena {
+    max-width: 350px; /* Determina que a imagem deve aparecer com apenas 50% do seu tamanho*/
     display: block; /* Duvidoso*/
     margin: auto; /* Centraliza a DIV tornando automatico o tamanho das margens*/
     
