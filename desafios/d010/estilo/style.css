@@ -32,21 +32,57 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content: '\00a0\1F517';
+}
+
 header {
     background-color: var(--cor4);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 }
 
 header > h1 {
     color: white;
     font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
 }
 
 header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
     color: white;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
 }
 
 nav {
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.445);
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s; /*Tempinho de transição quando passa o mouse no link (animação)*/
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color:var(--cor5);
 }
 
 main {
@@ -61,28 +97,113 @@ main {
     border-bottom-right-radius: 10px; /* Arredonda a borda inferior direita da DIV*/
 }
 
-main > article > h1 {
-    color: var(--cor4);
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main h1 {
+    color: var(--cor5);
     font-family: var(--fonte-android);
+    font-weight: normal;
     align-items: center; /* Duvidoso*/
 }
 
-main > article > h2 {
+main h2 {
+    color: var(--cor4);
     font-family:var(--fonte-android);
+    font-style: 1.8em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
 
-main > article > picture > img {
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Recuo no começo dos parágrafos paragrafo*/
+    line-height: 2em; /*Espaço entre as linhas*/
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
     width: 100%; /* Centraliza a Imagem com 100% do seu tamanho*/
 }
 
-main > article > img.pequena {
-    width: 50%; /* Determina que a imagem deve aparecer com apenas 50% do seu tamanho*/
+main img.pequena {
+    max-width: 350px; /* Determina que a imagem deve aparecer com apenas 50% do seu tamanho*/
     display: block; /* Duvidoso*/
     margin: auto; /* Centraliza a DIV tornando automatico o tamanho das margens*/
     
 }
 
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.404);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-position: inside; /*Muda a posição da bolinha da lista para dentro da div*/
+    list-style-type: '\2714\00a0\00a0';/*Troca a bolinha por um emoji, 00a0 = espaço (isso não é compativel com todos os navegadores*/
+    columns: 2; /*Divide a lista por colunas*/
+
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
